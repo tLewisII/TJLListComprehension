@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TJLListComprehension : NSObject
-+ (NSArray *)listComprehensionWithArrays:(id <NSFastEnumeration>)enumeration function:(id)block;
++ (NSArray *)listComprehensionWithLists:(id <NSFastEnumeration>)enumeration function:(id)block;
 @end

@@ -12,8 +12,8 @@
 @implementation TJLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSArray *arr = [TJLListComprehension listComprehensionWithArrays:@[@[@1, @2], @[@5], @[@10, @13], @[@11, @14,
-                                                                                                        @15]] function:^id(id obj, id obj1, id obj2, id obj3) {
+    NSArray *arr = [TJLListComprehension listComprehensionWithLists:@[@[@1, @2], @[@5], @[@10, @13], @[@11, @14,
+                                                                                                       @15]] function:^id(id obj, id obj1, id obj2, id obj3) {
         return @[obj, obj1, obj2, obj3];
     }];
     NSLog(@"%@", arr);

@@ -13,7 +13,7 @@
 @end
 
 @implementation TJLListComprehension
-+ (NSArray *)listComprehensionWithArrays:(id <NSFastEnumeration>)enumeration function:(id)block {
++ (NSArray *)listComprehensionWithLists:(id <NSFastEnumeration>)enumeration function:(id)block {
     NSUInteger count = 0;
     for(id e in enumeration) {
         NSAssert([e conformsToProtocol:@protocol(NSFastEnumeration)], @"Object \'%@\' does not conform to NSFastEnumeration", e);
@@ -36,7 +36,7 @@
         default:
             break;
     }
-    NSAssert(NO, @"No more than 4 arguments are supported");
+    NSAssert(NO, @"No more than 6 arguments are supported");
     return nil;
 }
 
@@ -146,4 +146,5 @@
     }
     return [NSArray arrayWithArray:mutable];
 }
+
 @end
