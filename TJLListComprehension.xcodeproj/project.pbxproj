@@ -54,8 +54,8 @@
 		DB831104190B5C81003CA450 /* TJLListComprehensionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TJLListComprehensionTests-Info.plist"; sourceTree = "<group>"; };
 		DB831106190B5C81003CA450 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB831108190B5C81003CA450 /* TJLListComprehensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJLListComprehensionTests.m; sourceTree = "<group>"; };
-		DB831112190B5C98003CA450 /* TJLListComprehension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJLListComprehension.h; sourceTree = "<group>"; };
-		DB831113190B5C98003CA450 /* TJLListComprehension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJLListComprehension.m; sourceTree = "<group>"; };
+		DB831112190B5C98003CA450 /* TJLListComprehension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TJLListComprehension.h; path = Source/TJLListComprehension.h; sourceTree = "<group>"; };
+		DB831113190B5C98003CA450 /* TJLListComprehension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TJLListComprehension.m; path = Source/TJLListComprehension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,7 @@
 				DB8310F3190B5C81003CA450 /* TJLViewController.m */,
 				DB8310F5190B5C81003CA450 /* Images.xcassets */,
 				DB8310E4190B5C81003CA450 /* Supporting Files */,
-				DB831112190B5C98003CA450 /* TJLListComprehension.h */,
-				DB831113190B5C98003CA450 /* TJLListComprehension.m */,
+				DBF8038F190BFD6F00C358CD /* Source */,
 			);
 			path = TJLListComprehension;
 			sourceTree = "<group>";
@@ -155,6 +154,15 @@
 				DB831105190B5C81003CA450 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBF8038F190BFD6F00C358CD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DB831112190B5C98003CA450 /* TJLListComprehension.h */,
+				DB831113190B5C98003CA450 /* TJLListComprehension.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +471,7 @@
 				DB83110E190B5C81003CA450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB83110F190B5C81003CA450 /* Build configuration list for PBXNativeTarget "TJLListComprehensionTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +480,7 @@
 				DB831111190B5C81003CA450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

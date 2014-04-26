@@ -12,11 +12,12 @@
 @implementation TJLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSArray *arr = [TJLListComprehension listComprehensionWithLists:@[@[@1, @2], @[@5], @[@10, @13], @[@11, @14,
-                                                                                                       @15]] function:^id(id obj, id obj1, id obj2, id obj3) {
-        return @[obj, obj1, obj2, obj3];
+    NSArray *list1 = @[@1, @2, @3];
+    NSArray *list2 = @[@4, @5, @6];
+    NSArray *array = [TJLListComprehension listComprehensionWithLists:@[list1, list2] function:^id(id obj, id obj1) {
+        return @[obj, obj1];
     }];
-    NSLog(@"%@", arr);
+    NSLog(@"%@", array);
     return YES;
 }
 
