@@ -33,6 +33,20 @@ NSArray *array = [TJLListComprehension listComprehensionWithLists:@[list1, list2
 
 All three examples produce the exact same list, but the first and last example raise you up out of the muck of writing your own loops and mutable containers and lets you focus and what you actually want to accomplish. Also note that The function can return any object, but this example just uses making a new, multi dimensional list out of existing ones as an example.
 
+It is also possible to filter on the lists with a predicate function:
+
+```
+NSArray *list1 = @[@1, @2, @3];
+NSArray *list2 = @[@4, @5, @6];
+NSArray *array = [TJLListComprehension listComprehensionWithLists:@[list1, list2] function:^id(id obj, id obj1) {
+    return @[obj, obj1];
+}                                                       predicate:^BOOL(NSNumber *obj, NSNumber *obj1) {
+    return (obj.integerValue + obj1.integerValue) % 2 == 0;
+}];
+```
+
+If the predicate returns YES, then the function will be applied and those elements added to the new list, if it return NO, then the function will not be applied and those elements not added to the list.
+
 Caveats
 ===========
 When creating a list comprehension with `+TJLListComprehension listComprehensionWithLists:function:`, you should pass a list of lists, as in the above example. Using an array literal is a convenient way to do this. Anything that conforms to `NSFastEnumeration` can be passed in for the lists parameter.

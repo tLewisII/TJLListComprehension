@@ -16,6 +16,8 @@
     NSArray *list2 = @[@4, @5, @6];
     NSArray *array = [TJLListComprehension listComprehensionWithLists:@[list1, list2] function:^id(id obj, id obj1) {
         return @[obj, obj1];
+    }                                                       predicate:^BOOL(NSNumber *obj, NSNumber *obj1) {
+        return (obj.integerValue + obj1.integerValue) % 2 == 0;
     }];
     NSLog(@"%@", array);
     return YES;
