@@ -55,7 +55,7 @@ The function argument is typed as simply `id`, but it is a block that can take a
 
 Installation
 ===========
-TJLMemoization uses [cocoapods](http://cocoapods.org), so just put `pod 'TJLListComprehension' 'version'` into your podfile and install like normal. then just `#import <TJLListComprehension/TJLListComprehension.h>` wherever you want to use it.
+TJLListComprehension uses [cocoapods](http://cocoapods.org), so just put `pod 'TJLListComprehension' 'version'` into your podfile and install like normal. then just `#import <TJLListComprehension/TJLListComprehension.h>` wherever you want to use it.
 
 <h1>License</h1>
 If you use TJLListComprehension and you like it, feel free to let me know, <terry@ploverproductions.com>. If you have any issue or want to make improvements, submit a pull request.<br><br>
